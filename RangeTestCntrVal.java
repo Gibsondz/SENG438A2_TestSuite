@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.jfree.data.Range;
 import org.junit.*;
 
-public class RangeTest {
+public class RangeTestCntrVal {
 	private Range exampleRange;
 	private Range exampleRange2;
 	private Range exampleRange3;

@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class RangeTest2 {
+public class RangeTestContains {
 
 private Range exampleRange;
 	

@@ -7,8 +7,8 @@ import org.junit.runners.Suite;
 	@RunWith(Suite.class)
 
 	@Suite.SuiteClasses({
-	   RangeTest.class,
-	   RangeTest2.class,
+	   RangeTestCntrVal.class,
+	   RangeTestContains.class,
 	   RangeTestCombine.class,
 	   RangeTestExpand.class,
 	   RangeTestShift.class
