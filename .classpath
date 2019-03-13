@@ -2,5 +2,25 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Final Suite"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/bsh-core-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/cglib-2.1_3-src.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/gnujaxp.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/hamcrest-library-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/jcommon-1.0.0-rc1-cvs.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/jcommon-1.0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/junit.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/junit-old.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/objenesis-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/jMock/jmock-2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/jMock/jmock-junit3-2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/jMock/jmock-junit4-2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/jMock/jmock-legacy-2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/jMock/jmock-script-2.5.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/jfreechart.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse-java/eclipse/plugins/com.atlassian.clover.eclipse.runtime_4.1.2.v20161011084623/clover-runtime.jar"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
