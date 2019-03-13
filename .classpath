@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="var" path="CLOVER_RUNTIME"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="Final Suite"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/JFreeChart/lib/bsh-core-2.0b4.jar"/>
