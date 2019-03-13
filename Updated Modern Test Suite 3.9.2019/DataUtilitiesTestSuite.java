@@ -20,6 +20,9 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	 */
 
 	@Test
+	/*
+	 * Passing expected values and checking the results are appropriate for the method
+	 */
 	public void calculateColumnTotalExpectedDataExpectedColumn() {
 	// setup
 		Mockery mockingContext = new Mockery();
@@ -42,6 +45,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Passing an expected value for data and an unexpected value for column (null).
+	 * The result should be a invalid parameter exceptions as stated in the JavaDoc
+	 */
 	public void calculateColumnTotalExpectedDataUnexpectedColumn() {
 		//Setup
 		Mockery mockingContext = new Mockery();
@@ -76,6 +83,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Passing an expected value for column and an unexpected value for data (null).
+	 * The result should be a invalid parameter exceptions as stated in the JavaDoc
+	 */
 	public void calculateColumnTotalUnexpectedDataExpectedColumn() {
 		// exercise 
 		double result = 1;
@@ -96,6 +107,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Passing an unexpected value for data (null) and an unexpected value for column (null).
+	 * The result should be a invalid parameter exceptions as stated in the JavaDoc
+	 */
 	public void calculateColumnTotalUnexpectedDataUnexpectedColumn() {
 		// exercise 
 		double result = 1;
@@ -116,6 +131,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Passing expected values in a boundary case of many rows but only a single column
+	 * Asserting that the result is appropriate for the method
+	 */
 	public void calculateColumnTotalOneColumnManyRow() {
 		// setup
 		Mockery mockingContext = new Mockery();
@@ -148,6 +167,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Passing expected values in a boundary case of a single row and a single column
+	 * Asserting that the result is appropriate for the method
+	 */
 	public void calculateColumnTotalOneRowOneColumn() {
 		// setup
 		Mockery mockingContext = new Mockery();
@@ -174,17 +197,20 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	 */
 	
 	@Test
-	public void calculateRowTotalExpectedDataExpectedColumn() {
+	/*
+	 * Passing expected values and checking the results are appropriate for the method
+	 */
+	public void calculateRowTotalExpectedDataExpectedRow() {
 	// setup
 		Mockery mockingContext = new Mockery();
 		final Values2D values = mockingContext.mock(Values2D.class);
 		mockingContext.checking(new Expectations() {
 		{
-		oneOf(values).getColumnCount();
-		will(returnValue(3)); //Why is this 3 and not 2?
-		oneOf(values).getValue(0, 0);
+		allowing(values).getColumnCount();
+		will(returnValue(2)); 
+		allowing(values).getValue(0, 0);
 		will(returnValue(7.5));
-		oneOf(values).getValue(0, 1);
+		allowing(values).getValue(0, 1);
 		will(returnValue(2.5));
 		}
 		});
@@ -196,7 +222,11 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
-	public void calculateRowTotalExpectedDataUnexpectedColumn() {
+	/*
+	 * Passing an expected value for data and an unexpected value for row (null).
+	 * The result should be a invalid parameter exceptions as stated in the JavaDoc
+	 */
+	public void calculateRowTotalExpectedDataUnexpectedRow() {
 		//Setup
 		Mockery mockingContext = new Mockery();
 		final Values2D values = mockingContext.mock(Values2D.class);
@@ -230,7 +260,11 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
-	public void calculateRowTotalUnexpectedDataExpectedColumn() {
+	/*
+	 * Passing an expected value for row and an unexpected value for data (null).
+	 * The result should be a invalid parameter exceptions as stated in the JavaDoc
+	 */
+	public void calculateRowTotalUnexpectedDataExpectedRow() {
 		// exercise 
 		double result = 1;
 		try {
@@ -250,6 +284,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Passing an unexpected value for row (null) and an unexpected value for data (null).
+	 * The result should be a invalid parameter exceptions as stated in the JavaDoc
+	 */
 	public void calculateRowTotalUnexpectedDataUnexpectedColumn() {
 		// exercise 
 		double result = 1;
@@ -270,27 +308,32 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Checking a expected boundary case with a single row and many columns
+	 * Asserting the result is appropriate for the method
+	 * 
+	 */
 	public void calculateRowTotalOneRowManyColumns() {
 		// setup
 		Mockery mockingContext = new Mockery();
 		final Values2D values = mockingContext.mock(Values2D.class);
 		mockingContext.checking(new Expectations() {
 			{
-			oneOf(values).getColumnCount();
-			will(returnValue(8)); //Why does this have to be 8?
-			oneOf(values).getValue(0, 0);
+			allowing(values).getColumnCount();
+			will(returnValue(7)); 
+			allowing(values).getValue(0, 0);
 			will(returnValue(5));
-			oneOf(values).getValue(0, 1);
+			allowing(values).getValue(0, 1);
 			will(returnValue(5));
-			oneOf(values).getValue(0, 2);
+			allowing(values).getValue(0, 2);
 			will(returnValue(5));
-			oneOf(values).getValue(0, 3);
+			allowing(values).getValue(0, 3);
 			will(returnValue(5));
-			oneOf(values).getValue(0, 4);
+			allowing(values).getValue(0, 4);
 			will(returnValue(5));
-			oneOf(values).getValue(0, 5);
+			allowing(values).getValue(0, 5);
 			will(returnValue(5));
-			oneOf(values).getValue(0, 6);
+			allowing(values).getValue(0, 6);
 			will(returnValue(5));
 			}
 		});
@@ -302,15 +345,19 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Testing an expected boundary case with a single row and a single column
+	 * Asserting the result is appropriate for the method
+	 */
 	public void calculateRowTotalOneRowOneColumn() {
 		// setup
 		Mockery mockingContext = new Mockery();
 		final Values2D values = mockingContext.mock(Values2D.class);
 		mockingContext.checking(new Expectations() {
 			{
-			oneOf(values).getColumnCount();
-			will(returnValue(2)); //Why does this have to be 2?
-			oneOf(values).getValue(0, 0);
+			allowing(values).getColumnCount();
+			will(returnValue(1)); 
+			allowing(values).getValue(0, 0);
 			will(returnValue(4.38));
 			}
 		});
@@ -327,6 +374,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	 * 
 	 */
 	@Test
+	/*
+	 * Testing the method getCumulativePercentages with an expected value for the input as a set of integers
+	 * Asserting that the result is appropriate for the method
+	 */
 	public void getCumulativePercentagesExpectedInputInteger() {
 		// setup
 		Mockery mockingContext = new Mockery();
@@ -363,6 +414,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Testing the method getCumulativePercentages with an expected value for the input as a set of doubles
+	 * Asserting that the result is appropriate for the method
+	 */
 	public void getCumulativePercentagesExpectedInputDouble() {
 		// setup
 		Mockery mockingContext = new Mockery();
@@ -393,6 +448,10 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
+	/*
+	 * Passing an unexpected value for input
+	 * The result should be a invalid parameter exceptions as stated in the JavaDoc
+	 */
 	public void getCumulativePercentagesUnexpectedInput() {
 		// exercise 
 				KeyedValues result;
@@ -408,7 +467,11 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	}
 	
 	@Test
-	public void getCumulativePercentagesUnexpectedInputSmallandLargeNumber() {
+	/*
+	 * Testing a boundary case of a set with a small number and a large number
+	 * Asserting that the result is appropriate for the method
+	 */
+	public void getCumulativePercentagesBoundaryInputSmallandLargeNumber() {
 		// setup
 		Mockery mockingContext = new Mockery();
 		final KeyedValues values = mockingContext.mock(KeyedValues.class);
