@@ -1,4 +1,3 @@
-package org.jfree.data.test;
 
 
 
@@ -18,7 +17,7 @@ import org.junit.Test;
 import java.lang.annotation.*;
 import java.security.InvalidParameterException;
 
-public class CreateNumberArrayTest {
+public class createNumberArrayTest {
 
 	double [] doubleArray, doubleArray2 = {1.0, 2.0, 3.0, 4.0};
 	Number [] numberArray, numberArray2 = {1.0, 2.0, 3.0, 4.0};
