@@ -7,7 +7,7 @@ import org.jfree.data.DataUtilities;
 import org.junit.*;
 import java.security.InvalidParameterException;
 
-public class createNumberArray2DTest {
+public class CreateNumberArray2DTest {
 	
 	private double [][] doubleArray, doubleArray2 = {
 			{1.0, 2.0, 3.0, 4.0},{5.0, 6.0, 7.0, 8.0}

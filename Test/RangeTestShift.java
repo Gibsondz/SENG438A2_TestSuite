@@ -33,7 +33,7 @@ private Range range1;
 	@Test
 	public void negative()
 	{
-		assertEquals("Range returned is incorrect, should be (1,12)", Range.shift(range1, -10), new Range(-9,0));
+		assertEquals("Range returned is incorrect, should be (-9,0)", Range.shift(range1, -10, true), new Range(-9,0));
 	}
 	//Edge case
 	@Test

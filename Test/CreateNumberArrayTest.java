@@ -4,8 +4,9 @@ import static org.junit.Assert.*;
 import org.jfree.data.DataUtilities;
 import org.junit.*;
 
+import java.security.InvalidParameterException;
 
-public class createNumberArrayTest {
+public class CreateNumberArrayTest {
 
 	double [] doubleArray, doubleArray2 = {1.0, 2.0, 3.0};
 
@@ -20,7 +21,7 @@ public class createNumberArrayTest {
 		}
 		catch(Exception e) {
 			assertEquals("Null does not throw "
-					+ "an IllegalArgumentException",IllegalArgumentException.class,e.getClass());
+					+ "an InvalidParameterException",InvalidParameterException.class,e.getClass());
 		}
 	}
 	@Test 
