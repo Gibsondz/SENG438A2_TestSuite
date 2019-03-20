@@ -1,9 +1,7 @@
-package org.jfree.data;
-import org.jfree.data.test.CreateNumberArray2DTest;
-import org.jfree.data.test.CreateNumberArrayTest;
-import org.jfree.data.test.ShiftCoverageTests;
+package org.jfree.data.test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+
 
 
 
@@ -16,7 +14,6 @@ import org.junit.runners.Suite;
 	   RangeTestExpand.class,
 	   RangeTestEquals.class,
 	   RangeTestShift.class,
-	   DataUtilitiesTest.class,
 	   DataUtilitiesTestSuite.class,
 	   IntersectsCoverageTests.class,
 	   ConstrainCoverageTests.class,

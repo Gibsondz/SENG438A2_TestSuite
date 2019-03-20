@@ -23,26 +23,30 @@ private Range exampleRange;
 	{
 		exampleRange = new Range(-10, 10);
 	}
-	
+	//Equivalence Test in range
 	@Test
 	public void itDoesContain() {
 		assertTrue("contains() returns false when value is in range.", exampleRange.contains(0));
 	}
+	//Equivalence Class of lower than range
 	@Test
 	public void lowerThanRange()
 	{
 		assertFalse("contains() returns true when values is lower than range", exampleRange.contains(-11));
 	}
+	//Equivalence Class of higher than range
 	@Test
 	public void higherThanRange()
 	{
 		assertFalse("contains() returns true when values is higher than range", exampleRange.contains(11));
 	}
+	//Boundry Value Analysis
 	@Test
 	public void lowerBoundCheck()
 	{
 		assertTrue("contains() returns false when value is on lower bound", exampleRange.contains(-10));
 	}
+	//Boundry Value Analysis
 	@Test
 	public void upperBoundCheck()
 	{

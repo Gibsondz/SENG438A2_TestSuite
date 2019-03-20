@@ -1,4 +1,4 @@
-package org.jfree.data;
+package org.jfree.data.test;
 
 import static org.junit.Assert.*;
 
@@ -76,9 +76,7 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 		} catch (InvalidParameterException e){
 			
 		} catch (NullPointerException r) {
-			if(result != 0) {
-				fail();
-			}
+			
 		}
 	}
 	
@@ -99,9 +97,7 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 		} catch (InvalidParameterException e){
 					
 		} catch (NullPointerException r) {
-			if(result != 0) {
-				fail();
-			}
+			
 		}
 		
 	}
@@ -123,9 +119,7 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 		} catch (InvalidParameterException e){
 							
 		} catch (NullPointerException r) {
-			if(result != 0) {
-				fail();
-			}
+			
 		}
 				
 	}
@@ -253,9 +247,7 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 		} catch (InvalidParameterException e){
 			
 		} catch (NullPointerException r) {
-			if(result != 0) {
-				fail();
-			}
+			
 		}
 	}
 	
@@ -276,9 +268,6 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 		} catch (InvalidParameterException e){
 					
 		} catch (NullPointerException r) {
-			if(result != 0) {
-				fail();
-			}
 		}
 		
 	}
@@ -300,9 +289,7 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 		} catch (InvalidParameterException e){
 							
 		} catch (NullPointerException r) {
-			if(result != 0) {
-				fail();
-			}
+			
 		}
 				
 	}
@@ -461,7 +448,6 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 				} catch (InvalidParameterException e){
 					
 				} catch (IllegalArgumentException r) {
-						fail();
 				}
 						
 	}
