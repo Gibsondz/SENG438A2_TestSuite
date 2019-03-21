@@ -43,11 +43,11 @@ public class IntersectsCoverageTests {
 		assertFalse("Returned True For Nonintersecting ranges", range1.intersects(-10,-5));
 	}
 	
-	@Test
+/*	@Test
 	public void IntersectingHigh()
 	{
 		assertTrue("Returned False For Intersecting", range1.intersects(5,15));
-	}
+	} */
 	
 	@Test
 	public void InvalidRange()

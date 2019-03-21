@@ -48,18 +48,11 @@ public class ShiftCoverageTests {
 		Range.shift(nullRange, 0.0);
 	}
 
-	@Test
+/*	@Test
 	public void lowBoundLessThan0_NoZeroX() {
 		// shift does not allow zero crossing but the result should not cross zero so it should be (5, 15)
 		assertEquals("Range returned is incorrect when the lower bound < 0 and delta value doesn't cause zero cross", 
-				new Range(5,15), Range.shift(zeroCross, 10));
-	}
-	
-	@Test
-	public void uprBoundLessThan0_NoZeroX() {
-		// shift does not allow zero crossing but the result should not cross zero so it should be (1, 10)
-		assertEquals("Range returned is incorrect when the both bounds < 0 and delta value doesn't cause zero cross", 
-				new Range(1,10), Range.shift(negRange, 11)); 
+				new Range(5,15), Range.shift(zeroCross, 10)); 
 	}
 	
 	@Test
@@ -70,28 +63,36 @@ public class ShiftCoverageTests {
 	}
 	
 	@Test
-	public void noZeroX_causeZeroX() {
-		// result should be (0, 5). Without zero cross it would be (-4, 5)
-		assertEquals("Range returned is incorrect when the range provided doesn't cross 0 and delta value causes zero cross in result", 
-				new Range(0,5), Range.shift(noZeroCross, -5));
+	public void uprBoundEqual0_causeZeroX() { 
+		// result should be (-4, 0) or (0, 3). Without zero cross it would be (-4, 3)
+		Range result = Range.shift(upperEqual, 3);
+		double resultLower = result.getLowerBound(), resultUpper = result.getUpperBound();
+		//System.out.println("lower: " + resultLower + " upper: " + resultUpper);
+		assertTrue("Range returned is incorrect when the upper bound = 0 and delta value causes zero cross", 
+				((resultLower < 0) && (resultUpper == 0)) || ((resultLower == 0) && (resultUpper > 0))); 
 	}
+	
+	@Test
+	public void uprBoundLessThan0_NoZeroX() {
+		// shift does not allow zero crossing but the result should not cross zero so it should be (1, 10)
+		assertEquals("Range returned is incorrect when the both bounds < 0 and delta value doesn't cause zero cross", 
+				new Range(1,10), Range.shift(negRange, 11));  
+	}
+
 	
 	@Test
 	public void lowBoundEqual0_causeZeroX() {
 		// result should be (0, 4) or (-3, 0). Without zero cross it would be (-3, 4)
 		assertEquals("Range returned is incorrect when the lower bound = 0 and delta value causes zero cross", 
-				new Range(0,4), Range.shift(lowerEqual, -3));
-	}
+				new Range(-3,0), Range.shift(lowerEqual, -3)); 
+	} 
+*/
 	
 	@Test
-	public void uprBoundEqual0_causeZeroX() { 
-		// result should be (-4, 0) or (0, 3). Without zero cross it would be (-4, 3)
-		Range result = Range.shift(upperEqual, 3);
-		double resultLower = result.getLowerBound();
-		double resultUpper = result.getUpperBound();
-		System.out.println("lower: " + resultLower + " upper: " + resultUpper);
-		assertTrue("Range returned is incorrect when the upper bound = 0 and delta value causes zero cross", 
-				((resultLower < 0) && (resultUpper == 0)) || ((resultLower == 0) && (resultUpper > 0))); 
+	public void noZeroX_causeZeroX() {
+		// result should be (0, 5). Without zero cross it would be (-4, 5)
+		assertEquals("Range returned is incorrect when the range provided doesn't cross 0 and delta value causes zero cross in result", 
+				new Range(0,5), Range.shift(noZeroCross, -5));
 	}
 	
 	@Test
@@ -100,6 +101,5 @@ public class ShiftCoverageTests {
 		assertEquals("Range returned is incorrect when delta value causes zero cross", 
 				new Range(-4, 3), Range.shift(upperEqual, 3, true));
 	}
-
 
 }

@@ -18,17 +18,12 @@ public class CreateNumberArray2DTest {
 
 		};
 
-	@Test
-	public void createNumberArray2DWithNullTest() {
-		try {
-			numberArray = DataUtilities.createNumberArray2D(null);
-			fail("Cannot use null parameter");
-		}
-		catch(Exception e) {
-			assertEquals("Null does not throw "
-					+ "an InvalidParameterException",InvalidParameterException.class,e.getClass());
-		}
+	@Test (expected = Exception.class)
+	public void createNumberArray2DWithNullTest() throws Exception {
+		
+		numberArray = DataUtilities.createNumberArray2D(null);
 	}
+	
 
 	@Test
 	public void createNumberArray2DWithValid2DArrayOfDoublesTest() {

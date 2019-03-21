@@ -13,17 +13,13 @@ public class CreateNumberArrayTest {
 	Number [] numberArray, numberArray2 = {1.0, 2.0, 3.0};
 	
 
-	@Test
-	public void createNumberArrayWithNullTest() {
-		try {
-			numberArray = DataUtilities.createNumberArray(null);
-			fail("Cannot use null paramter");
-		}
-		catch(Exception e) {
-			assertEquals("Null does not throw "
-					+ "an InvalidParameterException",InvalidParameterException.class,e.getClass());
-		}
+	@Test (expected = IllegalArgumentException.class)
+	public void createNumberArrayWithNullTest() throws IllegalArgumentException {
+		
+		numberArray = DataUtilities.createNumberArray(null);
 	}
+	
+	
 	@Test 
 	public void createNumberArrayWithValidDoubleArrayTest() {
 		numberArray = DataUtilities.createNumberArray(doubleArray2);
