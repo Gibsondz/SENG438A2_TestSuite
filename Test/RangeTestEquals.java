@@ -35,9 +35,12 @@ public class RangeTestEquals {
 	public void tearDown() throws Exception {
 	}
 
-	@Test (expected = Exception.class)
-	public void nullRangeTest() throws Exception {
-		boolean result = rangeNormal.equals(nullRange);
+	@Test 
+	public void nullRangeTest() {
+		boolean result = rangeNormal.equals(nullRange); 
+		assertFalse("The objects were determined to be equal even though on is null",
+				result);
+
 	}
 	
 	@Test

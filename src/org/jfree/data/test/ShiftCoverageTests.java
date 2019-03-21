@@ -88,6 +88,8 @@ public class ShiftCoverageTests {
 	} 
 */
 	
+	
+	
 	@Test
 	public void noZeroX_causeZeroX() {
 		// result should be (0, 5). Without zero cross it would be (-4, 5)
