@@ -20,7 +20,8 @@ import org.junit.runners.Suite;
 	   ExpandCoverageTests.class,
 	   CreateNumberArrayTest.class,
 	   CreateNumberArray2DTest.class,
-	   ShiftCoverageTests.class
+	   ShiftCoverageTests.class,
+	   RangeMutationTests.class
 	})
 
 	public class TestSuite {   
