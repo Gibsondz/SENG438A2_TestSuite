@@ -46,6 +46,34 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 	
 	@Test
 	/*
+	 * Passing expected values and checking the results are appropriate for the method
+	 * This test was recreated to kill a mutation that results from changing an equality check in the method
+	 * calculateColumnTotal()
+	 * The change is to have one of the values in the column be null
+	 */
+	public void calculateColumnTotalExpectedDataExpectedColumnNullValue() {
+	// setup
+		Mockery mockingContext = new Mockery();
+		final Values2D values = mockingContext.mock(Values2D.class);
+		mockingContext.checking(new Expectations() {
+		{
+		oneOf(values).getRowCount();
+		will(returnValue(2));
+		oneOf(values).getValue(0, 0);
+		will(returnValue(null));
+		oneOf(values).getValue(1, 0);
+		will(returnValue(2.5));
+		}
+		});
+		// exercise 
+		double result = DataUtilities.calculateColumnTotal(values, 0);
+		// verify
+		assertEquals(2.5,result, .000000001d);
+		// tear-down: NONE in t
+	}
+	
+	@Test
+	/*
 	 * Passing an expected value for data and an unexpected value for column (null).
 	 * The result should be a invalid parameter exceptions as stated in the JavaDoc
 	 */
@@ -212,6 +240,35 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 		double result = DataUtilities.calculateRowTotal(values, 0);
 		// verify
 		assertEquals(10.0,result, .000000001d);
+		// tear-down: NONE in t
+	}
+	
+	@Test
+	/*
+	 * Passing expected values and checking the results are appropriate for the method
+	 * This test was created to kill a mutation that results from a forced equality check in the method
+	 * calculateRowTotal
+	 * This test is a recreation of the test above it however one of the values in the row is null resulting in a different
+	 * path through the method
+	 */
+	public void calculateRowTotalExpectedDataExpectedRowNullValue() {
+	// setup
+		Mockery mockingContext = new Mockery();
+		final Values2D values = mockingContext.mock(Values2D.class);
+		mockingContext.checking(new Expectations() {
+		{
+		allowing(values).getColumnCount();
+		will(returnValue(2)); 
+		allowing(values).getValue(0, 0);
+		will(returnValue(null));
+		allowing(values).getValue(0, 1);
+		will(returnValue(2.5));
+		}
+		});
+		// exercise 
+		double result = DataUtilities.calculateRowTotal(values, 0);
+		// verify
+		assertEquals(2.5,result, .000000001d);
 		// tear-down: NONE in t
 	}
 	
@@ -394,6 +451,49 @@ public class DataUtilitiesTestSuite extends DataUtilities {
 		assertEquals(0.3125, x, .000000001d);
 		x = (Double) result.getValue(1);
 		assertEquals(0.875, x, .000000001d);
+		x = (Double) result.getValue(2);
+		assertEquals(1, x, .000000001d);
+
+		// tear-down: NONE in t
+	}
+	
+	@Test
+	/*
+	 * Testing the method getCumulativePercentages with an expected value for the input as a set of integers
+	 * Asserting that the result is appropriate for the method
+	 * This test was created to kill a mutation that results from a forced equality check in the method
+	 * getCumulativePercentages()
+	 * This test is a recreation of the test above except with null values to take a different path through the method
+	 */
+	public void getCumulativePercentagesExpectedInputIntegerNullValues() {
+		// setup
+		Mockery mockingContext = new Mockery();
+		final KeyedValues values = mockingContext.mock(KeyedValues.class);
+		mockingContext.checking(new Expectations() {
+			{
+			allowing(values).getItemCount();
+			will(returnValue(3));
+			allowing(values).getValue(0);
+			will(returnValue(5));
+			allowing(values).getValue(1);
+			will(returnValue(null));
+			allowing(values).getValue(2);
+			will(returnValue(2));
+			oneOf(values).getKey(0);
+			will(returnValue(0));
+			oneOf(values).getKey(1);
+			will(returnValue(1));
+			oneOf(values).getKey(2);
+			will(returnValue(2));
+			}
+		});
+		// exercise 
+		KeyedValues result = DataUtilities.getCumulativePercentages(values);
+		// verify
+		double x = (Double) result.getValue(0);
+		assertEquals(0.7142857, x, .001d);
+		x = (Double) result.getValue(1);
+		assertEquals(0.7142857, x, .001d);
 		x = (Double) result.getValue(2);
 		assertEquals(1, x, .000000001d);
 
