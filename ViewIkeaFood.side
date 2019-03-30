@@ -1,0 +1,240 @@
+{
+  "id": "6ada8e30-138c-404a-b4fb-12062a914fec",
+  "version": "2.0",
+  "name": "ViewIkeaFood",
+  "url": "https://www.ikea.com",
+  "tests": [{
+    "id": "7ff3070b-13fd-4835-93d5-d22df1144620",
+    "name": "ViewIkeaFood",
+    "commands": [{
+      "id": "9fedecd0-4479-477a-890e-c48e1c1b5722",
+      "comment": "",
+      "command": "open",
+      "target": "/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c52b5d9-acf6-45fc-843a-9eaf06a82421",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46fae16b-bcd9-4dfe-9ec4-c5a41d59f28b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nvrooms",
+      "targets": [
+        ["id=nvrooms", "id"],
+        ["linkText=ROOMS", "linkText"],
+        ["css=#nvrooms", "css:finder"],
+        ["xpath=//a[contains(text(),'ROOMS')]", "xpath:link"],
+        ["xpath=//a[@id='nvrooms']", "xpath:attributes"],
+        ["xpath=//li[@id='navRooms']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ROOMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81b1dbb3-93e8-42b3-a3b2-344173ac70de",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nvrooms",
+      "targets": [
+        ["id=nvrooms", "id"],
+        ["linkText=ROOMS", "linkText"],
+        ["css=#nvrooms", "css:finder"],
+        ["xpath=//a[contains(text(),'ROOMS')]", "xpath:link"],
+        ["xpath=//a[@id='nvrooms']", "xpath:attributes"],
+        ["xpath=//li[@id='navRooms']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ROOMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcf12cc3-2e4a-41fb-8273-d1f07ce97eeb",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=nvrooms",
+      "targets": [
+        ["id=nvrooms", "id"],
+        ["linkText=ROOMS", "linkText"],
+        ["css=#nvrooms", "css:finder"],
+        ["xpath=//a[contains(text(),'ROOMS')]", "xpath:link"],
+        ["xpath=//a[@id='nvrooms']", "xpath:attributes"],
+        ["xpath=//li[@id='navRooms']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ROOMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8c5d187-b15a-4d12-a0fa-66028b3023e0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nvOffers",
+      "targets": [
+        ["id=nvOffers", "id"],
+        ["linkText=OFFERS", "linkText"],
+        ["css=#nvOffers", "css:finder"],
+        ["xpath=//a[contains(text(),'OFFERS')]", "xpath:link"],
+        ["xpath=//a[@id='nvOffers']", "xpath:attributes"],
+        ["xpath=//li[@id='navOffers']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'OFFERS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b1d475d-2b42-40c4-9618-3997ddf726e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=nvOffers",
+      "targets": [
+        ["id=nvOffers", "id"],
+        ["linkText=OFFERS", "linkText"],
+        ["css=#nvOffers", "css:finder"],
+        ["xpath=//a[contains(text(),'OFFERS')]", "xpath:link"],
+        ["xpath=//a[@id='nvOffers']", "xpath:attributes"],
+        ["xpath=//li[@id='navOffers']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'OFFERS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f05a4948-6d20-40f1-ba3a-536bed45ebdb",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=nvOffers",
+      "targets": [
+        ["id=nvOffers", "id"],
+        ["linkText=OFFERS", "linkText"],
+        ["css=#nvOffers", "css:finder"],
+        ["xpath=//a[contains(text(),'OFFERS')]", "xpath:link"],
+        ["xpath=//a[@id='nvOffers']", "xpath:attributes"],
+        ["xpath=//li[@id='navOffers']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'OFFERS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b54d42c8-14c1-423c-b333-97f101ac99a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=lnkProducts",
+      "targets": [
+        ["id=lnkProducts", "id"],
+        ["linkText=PRODUCTS", "linkText"],
+        ["css=#navProducts > #lnkProducts", "css:finder"],
+        ["xpath=//a[contains(text(),'PRODUCTS')]", "xpath:link"],
+        ["xpath=//a[@id='lnkProducts']", "xpath:attributes"],
+        ["xpath=//li[@id='navProducts']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PRODUCTS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f66fc6d-4075-4bc2-a3ac-db9930a7f655",
+      "comment": "",
+      "command": "click",
+      "target": "id=lnkProducts",
+      "targets": [
+        ["id=lnkProducts", "id"],
+        ["linkText=PRODUCTS", "linkText"],
+        ["css=#navProducts > #lnkProducts", "css:finder"],
+        ["xpath=//a[contains(text(),'PRODUCTS')]", "xpath:link"],
+        ["xpath=//a[@id='lnkProducts']", "xpath:attributes"],
+        ["xpath=//li[@id='navProducts']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PRODUCTS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9207add0-9890-4953-aea8-679d4e25f3fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=IKEA FOOD",
+      "targets": [
+        ["linkText=IKEA FOOD", "linkText"],
+        ["css=#menuFood > ul > li > a", "css:finder"],
+        ["xpath=//a[contains(text(),'IKEA FOOD')]", "xpath:link"],
+        ["xpath=(//a[@name=''])[73]", "xpath:attributes"],
+        ["xpath=//div[@id='menuFood']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/catalog/categories/departments/food/?icid=itl|ca|en_foodmarket_navprod|201706292230001128_18')]", "xpath:href"],
+        ["xpath=//li[15]/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'IKEA FOOD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24e00452-ea8c-4e7a-80b3-2aaf4c538649",
+      "comment": "",
+      "command": "click",
+      "target": "css=.threeColumn:nth-child(3) .imageStyle",
+      "targets": [
+        ["css=.threeColumn:nth-child(3) .imageStyle", "css:finder"],
+        ["xpath=//img[@alt='Go to meat, fish & seafood']", "xpath:img"],
+        ["xpath=//div[@id='main']/div[3]/div[3]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a19da3d-b4a8-4ec0-8e14-d844ad2eef45",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,60.79999923706055)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f30512a7-d5d3-4dfe-9203-d73d4fc9e014",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,632)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b882b84-158f-4a76-8da5-97ba139f72b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgThmbProduct7",
+      "targets": [
+        ["id=imgThmbProduct7", "id"],
+        ["css=.product:nth-child(1) #imgThmbProduct7", "css:finder"],
+        ["xpath=//img[@id='imgThmbProduct7']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4438900a-f9a3-4b29-a1cb-6ff5a96480b5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,9.600000381469727)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fec4eb8-8065-4d91-b9e0-5cf3e2110284",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,170.39999389648438)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "27896c3a-ea6e-4459-a987-b86acab898ff",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7ff3070b-13fd-4835-93d5-d22df1144620"]
+  }],
+  "urls": ["https://www.ikea.com/"],
+  "plugins": []
+}

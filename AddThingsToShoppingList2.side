@@ -1,0 +1,428 @@
+{
+  "id": "52fa3816-0e19-49dc-ad7d-bdb5dd00907b",
+  "version": "2.0",
+  "name": "AddThingsToShoppingList2",
+  "url": "https://www.ikea.com",
+  "tests": [{
+    "id": "93b43ecf-c8b6-4106-bf0f-8b2fba079ac6",
+    "name": "AddThingsToShoppingList2",
+    "commands": [{
+      "id": "f3370a8c-6ea0-46f1-ab28-4bd9842cd0ce",
+      "comment": "",
+      "command": "open",
+      "target": "/ca/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10a3f9b9-913e-4040-9d68-a5b7b47a6fec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37d9182d-6436-4ab1-8f54-e1ab9655ae49",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=lnkNavDecoration",
+      "targets": [
+        ["id=lnkNavDecoration", "id"],
+        ["linkText=Decoration", "linkText"],
+        ["css=#lnkNavDecoration", "css:finder"],
+        ["xpath=//a[contains(text(),'Decoration')]", "xpath:link"],
+        ["xpath=//a[@id='lnkNavDecoration']", "xpath:attributes"],
+        ["xpath=//li[@id='navDecoration']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/catalog/categories/departments/decoration/?icid=itl|ca|en_decoration_navprod|201706292230001128_11')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul/li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Decoration')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbdf4d03-8d5d-4175-af94-5d04fdbd89eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=DESKS & HOME OFFICE",
+      "targets": [
+        ["linkText=DESKS & HOME OFFICE", "linkText"],
+        ["css=#menuDesks li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'DESKS & HOME OFFICE')]", "xpath:link"],
+        ["xpath=(//a[@name=''])[102]", "xpath:attributes"],
+        ["xpath=//div[@id='menuDesks']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ikea.com/ca/en/catalog/categories/departments/workspaces/?icid=itl|ca|en_workspaces_navprod|201807121157325004_276')]", "xpath:href"],
+        ["xpath=//li[9]/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'DESKS & HOME OFFICE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be970465-3a85-48ed-ae15-162e2576d32e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,87.19999694824219)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd9957f3-101b-455d-b950-6d7bf65fd0f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fourColumn .imageStyle",
+      "targets": [
+        ["css=.fourColumn .imageStyle", "css:finder"],
+        ["xpath=//img[@alt='Shop for storage & filing cabinets']", "xpath:img"],
+        ["xpath=//div[@id='main']/div[4]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "774b4281-668d-4854-a61a-dd7ca757abb3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,343.20001220703125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "448b666a-9a38-4621-93bb-565c4350cf58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.firstColumn .imageStyle",
+      "targets": [
+        ["css=.firstColumn .imageStyle", "css:finder"],
+        ["xpath=//img[@alt='Shop for display cabinets & sideboards']", "xpath:img"],
+        ["xpath=//div[@id='main']/div[4]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "681ca63b-c764-403b-86ef-ecf5c7c78a29",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,7.199999809265137)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0457eac7-2fa6-46f7-ab17-73447bea3718",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,739.2000122070312)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3915441-1036-4e87-887c-f49a7ce7e3e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupShoppingList10119206_12228",
+      "targets": [
+        ["id=popupShoppingList10119206_12228", "id"],
+        ["linkText=Save to list", "linkText"],
+        ["css=.product:nth-child(1) #popupShoppingList10119206_12228", "css:finder"],
+        ["xpath=//a[contains(text(),'Save to list')]", "xpath:link"],
+        ["xpath=//a[@id='popupShoppingList10119206_12228']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Save to list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d89c1a6e-3131-4bbd-a818-455e09917011",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=popupShoppingList10119206_12228",
+      "targets": [
+        ["id=popupShoppingList10119206_12228", "id"],
+        ["linkText=Save to list", "linkText"],
+        ["css=.product:nth-child(1) #popupShoppingList10119206_12228", "css:finder"],
+        ["xpath=//a[contains(text(),'Save to list')]", "xpath:link"],
+        ["xpath=//a[@id='popupShoppingList10119206_12228']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Save to list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67eb1db9-2d0f-47ae-b859-92e577adb0ab",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=popupShoppingList10119206_12228",
+      "targets": [
+        ["id=popupShoppingList10119206_12228", "id"],
+        ["linkText=Save to list", "linkText"],
+        ["css=.product:nth-child(1) #popupShoppingList10119206_12228", "css:finder"],
+        ["xpath=//a[contains(text(),'Save to list')]", "xpath:link"],
+        ["xpath=//a[@id='popupShoppingList10119206_12228']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Save to list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35111c0d-2799-48ce-a2d7-54564adff773",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=imgThmbProduct6",
+      "targets": [
+        ["id=imgThmbProduct6", "id"],
+        ["css=#imgThmbProduct6", "css:finder"],
+        ["xpath=//img[@alt='HEMNES cabinet with panel/glass door, black-brown']", "xpath:img"],
+        ["xpath=//img[@id='imgThmbProduct6']", "xpath:attributes"],
+        ["xpath=//div[@id='item_90371727_6']/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38ebc1a7-b68c-4122-923b-8e201fe44949",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#item_00242278_2 .price",
+      "targets": [
+        ["css=#item_00242278_2 .price", "css:finder"],
+        ["xpath=//div[@id='item_00242278_2']/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$229.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d0c6a03-b1dd-4e8f-b6ce-836719910dd3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#item_00242278_2 .price",
+      "targets": [
+        ["css=#item_00242278_2 .price", "css:finder"],
+        ["xpath=//div[@id='item_00242278_2']/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fdc00a9-dac5-4d49-bd56-c883bb79d804",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupShoppingList00242278_24645",
+      "targets": [
+        ["id=popupShoppingList00242278_24645", "id"],
+        ["linkText=Save to list", "linkText"],
+        ["css=.product:nth-child(1) #popupShoppingList00242278_24645", "css:finder"],
+        ["xpath=//a[contains(text(),'Save to list')]", "xpath:link"],
+        ["xpath=//a[@id='popupShoppingList00242278_24645']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Save to list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8afb8002-cd35-4c96-a422-f06fdbef2ee0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=popupShoppingList00242278_24645",
+      "targets": [
+        ["id=popupShoppingList00242278_24645", "id"],
+        ["linkText=Save to list", "linkText"],
+        ["css=.product:nth-child(1) #popupShoppingList00242278_24645", "css:finder"],
+        ["xpath=//a[contains(text(),'Save to list')]", "xpath:link"],
+        ["xpath=//a[@id='popupShoppingList00242278_24645']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Save to list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a032d998-69c8-4ef2-81f6-dca321adb0b9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=popupShoppingList00242278_24645",
+      "targets": [
+        ["id=popupShoppingList00242278_24645", "id"],
+        ["linkText=Save to list", "linkText"],
+        ["css=.product:nth-child(1) #popupShoppingList00242278_24645", "css:finder"],
+        ["xpath=//a[contains(text(),'Save to list')]", "xpath:link"],
+        ["xpath=//a[@id='popupShoppingList00242278_24645']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Save to list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abeb949c-f358-420a-8a51-60d28a9daacb",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupShoppingList20363207_37664",
+      "targets": [
+        ["id=popupShoppingList20363207_37664", "id"],
+        ["linkText=Save to list", "linkText"],
+        ["css=.product:nth-child(1) #popupShoppingList20363207_37664", "css:finder"],
+        ["xpath=//a[contains(text(),'Save to list')]", "xpath:link"],
+        ["xpath=//a[@id='popupShoppingList20363207_37664']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Save to list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e71da43-3cd2-49cf-9c1f-e8482b111ff3",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#item_40300662_4 #imgThmbProduct4",
+      "targets": [
+        ["css=#item_40300662_4 #imgThmbProduct4", "css:finder"],
+        ["xpath=(//img[@id='imgThmbProduct4'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='item_40300662_4']/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4eb568a-a2ba-4def-ab98-fad15fc2d666",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=imgThmbProduct4",
+      "targets": [
+        ["id=imgThmbProduct4", "id"],
+        ["css=.product:nth-child(1) #imgThmbProduct4", "css:finder"],
+        ["xpath=//img[@id='imgThmbProduct4']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cdf3ef8-5429-467b-a66b-2148d057782b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=imgThmbProduct4",
+      "targets": [
+        ["id=imgThmbProduct4", "id"],
+        ["css=#imgThmbProduct4", "css:finder"],
+        ["xpath=//img[@id='imgThmbProduct4']", "xpath:attributes"],
+        ["xpath=//div[@id='item_40300662_4']/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "461d3f1b-9cf4-466e-a9b6-4a891f0c3703",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#item_40300662_4 #imgThmbProduct4",
+      "targets": [
+        ["css=#item_40300662_4 #imgThmbProduct4", "css:finder"],
+        ["xpath=(//img[@id='imgThmbProduct4'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='item_40300662_4']/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b417a50-1b5a-474a-8975-ebf5072b7baa",
+      "comment": "",
+      "command": "click",
+      "target": "id=imgThmbProduct4",
+      "targets": [
+        ["id=imgThmbProduct4", "id"],
+        ["css=.product:nth-child(1) #imgThmbProduct4", "css:finder"],
+        ["xpath=//img[@id='imgThmbProduct4']", "xpath:attributes"],
+        ["xpath=//div[@id='landingPopup']/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f569b23-a318-4171-bdbe-e6ea595a4af3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,80)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa609cd4-9a1e-4057-b3f1-5993e30d9bce",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity",
+      "targets": [
+        ["id=quantity", "id"],
+        ["name=quantity", "name"],
+        ["css=#quantity", "css:finder"],
+        ["xpath=//input[@id='quantity']", "xpath:attributes"],
+        ["xpath=//form[@id='addCartContainer']/input[10]", "xpath:idRelative"],
+        ["xpath=//input[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1bf25c0-4a65-4a1f-a813-1b80ee50c94d",
+      "comment": "",
+      "command": "type",
+      "target": "id=quantity",
+      "targets": [
+        ["id=quantity", "id"],
+        ["name=quantity", "name"],
+        ["css=#quantity", "css:finder"],
+        ["xpath=//input[@id='quantity']", "xpath:attributes"],
+        ["xpath=//form[@id='addCartContainer']/input[10]", "xpath:idRelative"],
+        ["xpath=//input[10]", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "38db9027-5405-4c07-bb81-e4531c16db06",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsButton_saveToList_lnk",
+      "targets": [
+        ["id=jsButton_saveToList_lnk", "id"],
+        ["css=#jsButton_saveToList_lnk", "css:finder"],
+        ["xpath=//button[@id='jsButton_saveToList_lnk']", "xpath:attributes"],
+        ["xpath=//div[@id='popupShoppingList40300662_863638']/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save to list')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8f9f353-69a6-4fe0-947b-9424f3c2a507",
+      "comment": "",
+      "command": "click",
+      "target": "id=contentDialogue",
+      "targets": [
+        ["id=contentDialogue", "id"],
+        ["css=#contentDialogue", "css:finder"],
+        ["xpath=//div[@id='contentDialogue']", "xpath:attributes"],
+        ["xpath=//div[@id='slPopup']/div[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1783dc4-d2f2-41e8-aa09-93e51c9cf03b",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .link:nth-child(1)",
+      "targets": [
+        ["css=div:nth-child(1) > .link:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Shopping list')])[2]", "xpath:link"],
+        ["xpath=//form[@id='formShoppingListPopup']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/webapp/wcs/stores/servlet/InterestItemDisplay?storeId=3&langId=-15&listId=.')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/form/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00986339-f390-4763-941e-7dae9328050a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,17.600000381469727)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "393fd4f4-e349-44bc-809c-b965625d4fa4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,298.3999938964844)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "52334278-7df2-4d95-a8db-3975c25a8d7f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["93b43ecf-c8b6-4106-bf0f-8b2fba079ac6"]
+  }],
+  "urls": ["https://www.ikea.com/"],
+  "plugins": []
+}
